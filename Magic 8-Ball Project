@@ -1,0 +1,23 @@
+name = "Xavien"
+question = "Will I become a great programmer?"
+
+answer1 = "Yes - definitely"
+answer2 = "It is decidedly so"
+answer3 = "My sources say no"
+answer4 = "Ask again later"
+
+import random
+random_number = random.randint(1, 4)
+print(random_number)
+
+if random_number == 1 or 2:
+  print(name, "asks:", question)
+  print("Magic 8-Ball's Answer:", answer1 or answer2)
+elif random_number == 3:
+  print(name, "asks:", question)
+  print("Magic 8-Ball's Answer:", answer3)
+elif random_number == 4:
+  print(name, "asks:", question)
+  print("Magic 8-Ball's Answer:", answer4)
+else:
+  print("Error")
