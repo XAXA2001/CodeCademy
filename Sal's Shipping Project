@@ -1,0 +1,37 @@
+weight = 8.4
+
+# Ground Shipping
+flat_rate = 20
+
+if weight <= 2:
+  price = weight * 1.50 + flat_rate
+elif weight > 2 and weight <= 6:
+  price = weight * 3.00 + flat_rate
+elif weight > 6 and weight <= 10:
+  price = weight * 4.00 + flat_rate
+else:
+  price = weight * 4.75 + flat_rate
+
+
+print("Ground Shipping Total:", price)
+
+# Ground Shipping Premium
+flat_rate = 125
+price = weight * 0 + flat_rate
+
+print("Ground Shipping Premuim Total:", price)
+
+# Drone Shipping
+flat_rate = 0
+weight = 1.5
+
+if weight <= 2:
+  price = weight * 4.50 + flat_rate
+elif weight > 2 and weight <= 6:
+  price = weight * 9.00 + flat_rate
+elif weight > 6 and weight <= 10:
+  price = weight * 12.00 + flat_rate
+else:
+  price = weight * 14.25 + flat_rate
+
+print("Drone Shipping:", price)
